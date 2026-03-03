@@ -2,83 +2,111 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Masjid of Ummah – About Us</title>
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="stylesheet" href="styles.css">
+  <title>Masjid of Ummah – Home</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico?v=2">
+  <link rel="stylesheet" href="styles.css?v=7">
 </head>
 <body>
   
-  <!-- Standard Site Header -->
   <header class="site-header">
     <div class="site-branding">
       <a href="index.html" style="display: block;">
         <img src="logo.png" alt="Masjid of Ummah - Built By Ummah" class="site-logo-large">
       </a>
+      <div class="sr-only">
         <h1>Masjid of Ummah</h1>
         <p>Built By Ummah</p>
       </div>
-    </div>
+    </div> <!-- This div closes .site-branding -->
 
     <nav class="main-nav">
-      <a href="index.html">Home</a>
-      <a href="about.html" style="text-decoration: underline;">About us</a>
+      <a href="index.html" style="text-decoration: underline;">Home</a>
+      <a href="about.html">About us</a>
       <a href="parking.html">Parking</a>
       <a href="contact.html">Contact</a>
       <a href="donate.html">Donate</a>
     </nav>
   </header>
 
-  <main class="page">
+  <section class="hero">
     
-    <div class="about-hero">
-      <h1 class="hero-title">About Masjid of Ummah</h1>
-      <p class="hero-subtitle">Built by the Ummah, for the Ummah.</p>
-    </div>
-
-    <div class="about-content">
-      <h2>Our Story</h2>
-      <p>
-        By the grace of Allah (SWT), Masjid of Ummah was officially established on <strong>May 24th, 2024</strong>. 
-        What began as a collective vision among dedicated community members has blossomed into a permanent house of worship, learning, and gathering for Muslims in the area. 
+    <!-- Centered Text Section -->
+    <div class="hero-content-left">
+      <div>
+        <p class="hero-highlight">Welcome to Masjid of Ummah</p>
+      </div>
+      <h1 class="hero-title">A house of worship, learning, and community in Itasca, IL.</h1>
+      <p class="hero-subtitle">
+        Join us for the five daily prayers, Jumu'ah, classes, and family programs for all ages.
       </p>
       
-      <div class="mission-box">
-        "Our mission is to cultivate a welcoming, spiritual, and educational environment where individuals and families can grow in their faith, strengthen their connection to Allah, and serve the broader community with compassion."
-      </div>
-
-      <p>
-        We believe that a masjid should be the vibrant heart of the community. Beyond offering a peaceful space for the five daily prayers and Jumu'ah, we are committed to providing robust Islamic education for our youth, regular halaqas, family nights, and outreach programs. 
-        Masjid of Ummah is your home away from home—a place where faith is nurtured, bonds are formed, and the prophetic tradition is practiced daily.
+      <p class="hero-info hero-info-links">
+        <strong>Address:</strong> 207 E Center St, Itasca, IL 60143<br>
+        <strong>Phone:</strong> <a href="tel:+17737714204">(773) 771-4204</a><br>
+        <strong>Email:</strong> <a href="mailto:majidofummah207@gmail.com">majidofummah207@gmail.com</a><br>
+        <strong>Instagram:</strong> <a href="https://instagram.com/masjidofummah" target="_blank">@masjidofummah</a>
       </p>
     </div>
 
-    <h2 style="color: #064b3b; text-align: center; margin-bottom: 24px; font-size: 24px;">Our Core Programs</h2>
-
-    <div class="programs-grid">
-      
-      <div class="program-card">
-        <h3>🕌 Daily & Friday Prayers</h3>
-        <p>We are open for all five daily prayers in congregation. We also hold weekly Jumu'ah services featuring inspiring and relevant khutbahs.</p>
+    <!-- Prayer Times Section -->
+    <div class="hero-grid">
+      <div class="prayer-card-container">
+        <div class="prayer-widget-wrapper">
+          <iframe
+            src="https://timing.athanplus.com/masjid/widgets/embed?theme=3&masjid_id=PAPybNdJ&khutbah=1:00PM"
+            width="100%"
+            height="400"
+            frameborder="0"
+            allowtransparency="true"
+            style="display: block;">
+          </iframe>
+        </div>
       </div>
+    </div>
+    
+  </section>
 
-      <div class="program-card">
-        <h3>📖 Quran & Islamic Studies</h3>
-        <p>We offer foundational Quran reading, memorization (Hifz), and Tajweed classes for youth and adults, helping our community connect with the Book of Allah.</p>
+  <!-- NEW ANNOUNCEMENT PHOTO SLIDER -->
+  <section class="slider-container">
+    <h2 style="font-size: 20px; color: #064b3b; margin-top: 0; margin-bottom: 16px; padding-left: 8px;">Announcements & Events</h2>
+    <div class="slider-wrapper">
+      <div class="slider-images">
+        <!-- Make sure these image names exactly match the files in your folder -->
+        <img src="announce1.jpeg" alt="Announcement 1">
+        <img src="announce2.jpeg" alt="Announcement 2">
+        <img src="announce3.jpeg" alt="Announcement 3">
       </div>
+    </div>
+  </section>
 
-      <div class="program-card">
-        <h3>👨‍👩‍👧‍👦 Family & Youth Nights</h3>
-        <p>Engaging weekly programs designed to strengthen family bonds and provide our youth with a safe, Islamic environment to learn and socialize.</p>
-      </div>
-
-      <div class="program-card">
-        <h3>🤝 Community Service</h3>
-        <p>Driven by Islamic values, we organize food drives, charity collections, and outreach initiatives to support our neighbors and those in need.</p>
-      </div>
-
+  <section class="two-col" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+    
+    <div class="card">
+      <h2>Programs & services</h2>
+      <p>
+        Qur’an classes, youth programs, and family nights are offered throughout the year. Visit the About page to learn more.
+      </p>
+      <a href="about.html" class="link-button">About our masjid</a>
     </div>
 
-  </main>
+    <div class="card">
+      <h2>Community Support</h2>
+      <p>
+        Guided by Islamic principles, our masjid regularly provides support, charity, and essential resources to those in need.
+      </p>
+      <a href="contact.html" class="link-button">Reach out to us</a>
+    </div>
+
+    <div class="card">
+      <h2>Support the masjid</h2>
+      <p>
+        Your donations keep the masjid open, maintain the building, and fund education
+        and outreach programs.
+      </p>
+      <a href="donate.html" class="link-button">Donate online</a>
+    </div>
+
+  </section>
 
   <footer>
     © <span id="year"></span> Masjid of Ummah. All rights reserved.
