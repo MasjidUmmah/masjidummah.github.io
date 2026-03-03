@@ -1,168 +1,191 @@
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: #f3f6fb;
-      color: #222;
-    }
+/* =========================================
+   GLOBAL STYLES
+   ========================================= */
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #f3f6fb;
+  color: #222;
+}
 
-    .site-header {
-      background: linear-gradient(135deg, #0b8b6f, #067257);
-      color: #fff;
-      padding: 18px 24px 10px;
-      text-align: center;
-    }
+/* Added for SEO & Screen Readers (hides text visually since the logo has the text drawn in) */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
 
-    .site-branding {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 4px;
-    }
+/* =========================================
+   HEADER & NAVIGATION
+   ========================================= */
+.site-header {
+  background: linear-gradient(135deg, #0b8b6f, #067257);
+  color: #fff;
+  padding: 18px 24px 10px;
+  text-align: center;
+}
 
-    .site-logo-large {
-      /* Adjusted height so the new logo fits nicely without being too huge */
-      height: 110px;
-      width: auto;
-      margin-bottom: 6px;
-    }
+.site-branding {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
 
-    /* We keep this hidden visually but screen readers can still read it */
-    .sr-only {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      padding: 0;
-      margin: -1px;
-      overflow: hidden;
-      clip: rect(0, 0, 0, 0);
-      border: 0;
-    }
+.site-logo-large {
+  height: 110px;
+  width: auto;
+  margin-bottom: 6px;
+}
 
-    .main-nav {
-      margin-top: 12px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 18px;
-      font-size: 14px;
-      font-weight: 500;
-    }
+.main-nav {
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+  font-size: 14px;
+  font-weight: 500;
+}
 
-    .main-nav a {
-      color: #e8fff8;
-      text-decoration: none;
-      margin-left: 16px;
-      font-size: 14px;
-      font-weight: 500;
-    }
+.main-nav a {
+  color: #e8fff8;
+  text-decoration: none;
+}
 
-    .main-nav a:hover {
-      text-decoration: underline;
-    }
+.main-nav a:hover {
+  text-decoration: underline;
+}
 
-    .hero {
-      max-width: 960px;
-      margin: 32px auto 24px;
-      padding: 24px;
-      border-radius: 16px;
-      background: linear-gradient(135deg, #0b8b6f0d, #0b8b6f22);
-      display: grid;
-      grid-template-columns: minmax(0, 2fr) minmax(0, 1.2fr);
-      gap: 20px;
-    }
+/* =========================================
+   MAIN LAYOUT & COMPONENTS
+   ========================================= */
+.page {
+  max-width: 960px;
+  margin: 32px auto;
+  padding: 0 24px;
+}
 
-    .hero-title {
-      font-size: 28px;
-      margin: 0 0 8px;
-      color: #064b3b;
-    }
+.hero {
+  max-width: 960px;
+  margin: 32px auto 24px;
+  padding: 24px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #0b8b6f0d, #0b8b6f22);
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1.2fr);
+  gap: 20px;
+}
 
-    .hero-subtitle {
-      margin: 0 0 12px;
-      font-size: 16px;
-      color: #345;
-    }
+.hero-title {
+  font-size: 28px;
+  margin: 0 0 8px;
+  color: #064b3b;
+}
 
-    .hero-highlight {
-      display: inline-block;
-      margin-top: 8px;
-      padding: 4px 10px;
-      border-radius: 999px;
-      background: #0b8b6f;
-      color: #fff;
-      font-size: 13px;
-      font-weight: 600;
-    }
+.hero-subtitle {
+  margin: 0 0 12px;
+  font-size: 16px;
+  color: #345;
+}
 
-    .hero-info {
-      font-size: 14px;
-      margin-top: 10px;
-      color: #345;
-    }
+.hero-highlight {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #0b8b6f;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+}
 
-    .hero-grid {
-      display: grid;
-      gap: 10px;
-    }
+.hero-info {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #345;
+}
 
-    .card {
-      border-radius: 12px;
-      padding: 14px 16px;
-      background: #fff;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
-      font-size: 14px;
-    }
+.hero-grid {
+  display: grid;
+  gap: 10px;
+}
 
-    .card h2 {
-      font-size: 15px;
-      margin: 0 0 6px;
-      color: #064b3b;
-    }
+.card {
+  border-radius: 12px;
+  padding: 14px 16px;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+  font-size: 14px;
+}
 
-    .two-col {
-      max-width: 960px;
-      margin: 0 auto 32px;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 20px;
-      padding: 0 24px;
-    }
+.card h2 {
+  font-size: 15px;
+  margin: 0 0 6px;
+  color: #064b3b;
+}
 
-    .link-button {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 8px 14px;
-      border-radius: 999px;
-      background: #0b8b6f;
-      color: #fff;
-      text-decoration: none;
-      font-size: 13px;
-      font-weight: 600;
-    }
+.two-col {
+  max-width: 960px;
+  margin: 0 auto 32px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  padding: 0 24px;
+}
 
-    .link-button.secondary {
-      background: #fff;
-      color: #0b8b6f;
-      border: 1px solid #0b8b6f;
-    }
+.link-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: #0b8b6f;
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+}
 
-    footer {
-      text-align: center;
-      padding: 16px 24px 24px;
-      font-size: 12px;
-      color: #556;
-    }
+.link-button.secondary {
+  background: #fff;
+  color: #0b8b6f;
+  border: 1px solid #0b8b6f;
+}
 
-    @media (max-width: 720px) {
-      .hero {
-        grid-template-columns: 1fr;
-      }
+.pill {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: #e4f4ef;
+  color: #0b8b6f;
+  font-size: 12px;
+  font-weight: 600;
+}
 
-      .main-nav {
-        gap: 12px;
-      }
-    }
+.prayer-times-widget {
+  margin-top: 8px;
+}
 
-    .prayer-times-widget {
-      margin-top: 8px;
-    }
+footer {
+  text-align: center;
+  padding: 16px 24px 24px;
+  font-size: 12px;
+  color: #556;
+}
+
+/* =========================================
+   RESPONSIVE (MOBILE)
+   ========================================= */
+@media (max-width: 720px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+  .main-nav {
+    gap: 12px;
+  }
+}
