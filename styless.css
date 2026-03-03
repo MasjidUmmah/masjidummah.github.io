@@ -20,10 +20,23 @@
   gap: 4px;
 }
 
+/* Updated to make the new logo (which includes text) larger */
 .site-logo-large {
-  height: 70px;
+  height: 110px;
   width: auto;
   margin-bottom: 6px;
+}
+
+/* Added for SEO & Screen Readers (hides text visually since the logo has the text drawn in) */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
 
 .site-name {
